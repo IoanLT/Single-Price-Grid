@@ -1,0 +1,208 @@
+/* Table of contents:
+
+1. Global styles; 
+
+2. Typography;
+
+3. Layout;
+
+4. Components;
+
+5. Media queries
+
+*/
+
+
+/* For large screens - Desktop: 1440px */
+
+/* 1. =============
+      Global styles
+      ============= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+      
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;  
+  background: hsl(204, 43%, 93%);
+}
+      
+      
+/* 2. =============
+      Typography
+      ============= */ 
+      
+.community h3 {
+  color: hsl(179, 62%, 43%);
+  padding: 0.5rem 0;
+}
+
+.community h4 {
+  color: hsl(71, 73%, 54%);
+  padding: 0.5rem 0;
+}
+
+.community p {
+  color: hsl(218, 22%, 67%);
+  font-size: 0.80rem;
+  padding: 0.2rem 0;
+}
+
+.wrap h4 {
+  font-size: 1rem;
+  padding: 2rem 0 0.5rem 0;
+}
+
+.subscription p {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  padding: 0.2rem 0;
+}
+
+.subscription p:nth-child(2) {
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 0.2rem 0;
+}
+
+.subscription p:nth-child(3) {
+  display: inline-block;  
+}
+
+.why-us li {
+  font-size: 0.7rem;
+  line-height: 1.6;
+  list-style: none;
+  padding: 0.1rem 0;
+}      
+      
+/* 3. =============
+      Layout
+      ============= */
+      
+#container {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 15rem auto;
+  font-weight: 400;
+} 
+
+.community {
+  background: #fff;
+  margin: 0 auto;
+  width: 37%;  
+  padding: 2rem;
+  text-align: left;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: row;  
+  width: 37%;
+  background: hsl(179, 62%, 43%);
+  color: #fff;
+  margin: 0 auto;  
+  text-align: left;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.subscription {
+  width: 50%;
+  padding: 0 2.5rem;
+}
+
+.why-us {
+  width: 50%;
+  background: hsl(178, 57%, 48%);
+  padding: 0 2.5rem;
+  border-radius: 0 0 0.5rem 0;
+}
+      
+      
+/* 4. =============
+      Components
+      ============= */
+
+      
+.subscription a {  
+  background: hsl(71, 73%, 54%);
+  display: block;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #fff;
+  margin: 2rem auto;
+  padding: 1rem 0;
+  text-decoration: none;
+  border-radius: 0.5rem;
+}
+      
+/* 5. =============
+      Media queries
+      ============= */
+      
+@media only screen and (max-width: 500px) {
+      
+.community {
+  background: #fff;
+  margin: 0 auto;
+  width: 80%;  
+  padding: 1.5rem;
+  text-align: left;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.community p {
+  color: hsl(218, 22%, 67%);
+  font-size: 0.80rem;
+  line-height: 1.8;
+  padding: 0.2rem 0;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;  
+  width: 80%;
+  
+}
+
+.wrap h4 {
+  font-size: 1.1rem;
+  padding: 2rem 0 0.5rem 0;
+}
+
+.wrap p {
+  font-size: 0.9rem;
+}
+      
+.subscription {
+  width: 100%;
+  padding: 0 1.5rem;
+}
+
+.subscription p:nth-child(2) {
+  font-size: 1.8rem;  
+}
+
+.subscription a {
+  font-size: 1rem;
+}
+
+.why-us {
+  width: 100%;  
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.why-us li {
+  font-size: 0.8rem;
+}
+      
+      
+}
